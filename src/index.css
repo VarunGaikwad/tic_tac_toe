@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.play_symbol {
+  @apply flex justify-center items-center size-44 cursor-pointer;
+}
