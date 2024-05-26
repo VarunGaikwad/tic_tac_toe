@@ -46,7 +46,7 @@ export default function Game({ setScoreCard }) {
     <div className="grid grid-cols-3">
       {symbolPosition.map((symbol, i) => (
         <div
-          onClick={() => onPlayClick(i)}
+          onClick={() => symbol === "" && onPlayClick(i)}
           key={i}
           className={`play_symbol ${
             [2, 5, 8].indexOf(i) === -1 ? "border-r-8" : ""
