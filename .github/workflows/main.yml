@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '21.7.1'
+          node-version: "21"
 
       - name: Install dependencies
         run: npm install
@@ -25,4 +25,4 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        run:  npm run deploy
+        run: npm run deploy
