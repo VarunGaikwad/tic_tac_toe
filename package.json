@@ -1,5 +1,6 @@
 {
   "name": "tic_tac_toe",
+  "description": "This is PreApeXis Tic Tac Toe game.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
