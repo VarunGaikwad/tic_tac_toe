@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: contains(github.event.head_commit.message, 'deploy')
+    if: startsWith(github.event.head_commit.message, 'deploy')
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,9 @@ jobs:
           node-version: "21"
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install --save-dev gh-pages
+          npm install
 
       - name: Build project
         run: npm run build
